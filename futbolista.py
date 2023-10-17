@@ -3,13 +3,14 @@ from persona import Persona
 class Futbolista(Persona, Deportista):
     
     listaFutbolistas = []
-    def __init__(self,nombre, edad, altura, sexo, años, golesMarcados, tarjetas, pierna):
-        super(Persona, self).__init__(nombre, edad, altura, sexo)
-        super(Deportista, self).__init__("Futbol", años)
+    def __init__(self, nombre, edad, altura, sexo, años, golesMarcados, tarjetas, pierna):
+        super(Persona, self).__init__(nombre, edad, altura, sexo)  # Llamar al constructor de Persona
+        super(Deportista, self).__init__("Futbol", años)  # Llamar al constructor de Deportista
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetas
         self._piernaHabil = pierna
         Futbolista.listaFutbolistas.append(self)
+
 
     def setGolesMarcados(self, goles):
         self._golesMarcados = goles
