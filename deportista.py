@@ -1,4 +1,3 @@
-
 class Deportista:
    
     def __init__(self, deporte, años):
