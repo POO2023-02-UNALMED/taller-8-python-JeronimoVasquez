@@ -6,7 +6,6 @@ class Futbolista(Persona, Deportista):
     def __init__(self,nombre, edad, altura, sexo, años, golesMarcados, tarjetas, pierna):
         super(Persona, self).__init__(nombre, edad, altura, sexo)
         super(Deportista, self).__init__("Futbol", años)
-        
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetas
         self._piernaHabil = pierna
